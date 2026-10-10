@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Quiz App_v1 | in HTML CSS and JS API</title>
+	</head>
+	<body>
+		<main class="container">
+			<section class="start-screen ">
+				<h1 class="heading">Winstone's General Knowledge Quiz</h1>
+				<article class="settings">
+					<label for="num-questions">Number of Questions</label>
+					<select name="num-questions" id="numQuestions">
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+						<option value="25">25</option>
+						<option value="30">30</option>
+					</select>
+					<label for="category" class="label">Category:</label>
+					<select id="category" class="select">
+						<option value="">any Category</option>
+						<option value="9">General Knowledge</option>
+						<option value="10">Books</option>
+						<option value="11">films</option>
+						<option value="12">music</option>
+						<option value="14">televisions</option>
+						<option value="15">video games</option>
+						<option value="16">board games</option>
+						<option value="17">Science and nature</option>
+						<option value="18">Computers</option>
+						<option value="19">mathematics</option>
+						<option value="20">mythology</option>
+						<option value="21">sports</option>
+						<option value="22">geography</option>
+						<option value="23">history</option>
+						<option value="24">politics</option>
+						<option value="25">art</option>
+						<option value="28">vehicles</option>
+					</select>
+					<label for="difficulty" class="label">Select difficulty</label>
+					<select name="difficulty" id="difficulty">
+						<option value="">any difficulty</option>
+						<option value="easy">easy</option>
+						<option value="medium">medium</option>
+						<option value="hard">hard</option>
+					</select>
+					<label for="time" class="label">time per question</label>
+					<select name="time" id="time">
+						<option value="10">10 seconds</option>
+						<option value="15">15 seconds</option>
+						<option value="20">20 seconds</option>
+						<option value="25">25 seconds</option>
+						<option value="30">30 seconds</option>
+						<option value="60">60 seconds</option>
+					</select>
+					<button class="btn start-btn">Start Here</button>
+				</article>
+			</section>
+			<section class="quiz hide">
+				<article class="timer">
+					<div class="progress">
+						<div class="progress-bar"></div>
+						<span class="progress-text"></span>
+					</div>
+				</article>
+				<article class="question-wrapper ">
+					<div class="number">
+						Question <span class="current">1</span><span class="total">/10</span>
+					</div>
+					<div class="question"></div>
+					<div class="answer-wrapper">
+						<!-- <div class="answer selected">
+							<span class="text">answer</span>
+							<span class="checkbox"
+								><span class="icon"> <i class="fa-solid fa-check"></i></span
+							></span>
+						</div>
+						<div class="answer selected">
+							<span class="text">answer</span>
+							<span class="checkbox"
+								><span class="icon"> <i class="fa-solid fa-check"></i></span
+							></span>
+						</div>
+						<div class="answer selected">
+							<span class="text">answer</span>
+							<span class="checkbox"
+								><span class="icon"> <i class="fa-solid fa-check"></i></span
+							></span>
+						</div>
+						<div class="answer wrong selected">
+							<span class="text">answer</span>
+							<span class="checkbox"
+								><span class="icon"> <i class="fa-solid fa-check"></i></span
+							></span>
+						</div>
+						<div class="answer correct selected">
+							<span class="text">answer</span>
+							<span class="checkbox"
+								><span class="icon"> <i class="fa-solid fa-check"></i></span
+							></span>
+						</div> -->
+					</div>
+				</article>
+				<button class="btn submit" disabled>Submit</button>
+				<button class="btn next">Next</button>
+			</section>
+			<section class="end-screen hide">
+				<h1 class="heading">Winstone's General Knowledge Quiz</h1>
+				<article class="score">
+					<div class="score-text">Your Score:</div>
+					<div class="score-tally">
+						<div class="final-score">0</div>
+						<div class="total-score">/10</div>
+					</div>
+				</article>
+				<button class="btn restart">Restart Quiz</button>
+			</section>
+		</main>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
